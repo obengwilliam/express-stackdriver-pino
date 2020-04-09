@@ -1,0 +1,38 @@
+{
+  "name": "express-stackdriver-pino",
+  "version": "0.0.1",
+  "description": " Log utilities",
+  "main": "logger.js",
+  "scripts": {
+    "format": "eslint format",
+    "prepush": "eslint lint",
+    "test": "#⚡ Run test \n\t  mocha test \"./{,!(node_modules)/**/}*.test.js\" ",
+    "pretest": "npm run lint",
+    "watch": "onchange \"**/*.js\" \"**/*.test.js\"  -w -- npm run test",
+    "cover": "#Run coverage report \n\t npm-run-all cover:**",
+    "cover:report": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "cover:report:open": "opn coverage/lcov-report/index.html",
+    "postcover": "rimraf -rf .nyc_output",
+    "lint": "# Run lint and fix \n\t eslint lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "commit": "git-cz",
+    "release": "np"
+  },
+  "author": "iamkojoobeng@gmai.com",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "1.1.5",
+    "uuid": "3.3.2",
+    "pino": "5.11.1"
+  },
+  "devDependencies": {},
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obengwilliam/express-stackdriver-pino"
+  }
+}
