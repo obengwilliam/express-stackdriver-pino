@@ -1,17 +1,15 @@
-# Overview
-- Provides a number of express log utilities that are formatted to work on stackdriver using fastest the logger in nodejs :) [pino](https://github.com/pinojs/pino)
-
-[![Build Status][build-badge]][build]
-[![Code Coverage][coverage-badge]][coverage]
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][license]
-
 [![Examples][examples-badge]][examples]
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
 [![Tweet][twitter-badge]][twitter]
+
+# Overview
+- Provides a number of express log utilities that are formatted to work on stackdriver using fastest the logger in nodejs :) [pino](https://github.com/pinojs/pino)
+
 
 
 ### Checklist 
@@ -84,3 +82,19 @@ const logger = expressLogger(options)
 app.use(logger.errorLogger())
 
 ```
+
+
+[version-badge]: https://img.shields.io/npm/v/express-stackdriver-pino.svg?style=flat-square
+[package]: https://www.npmjs.com/package/express-stackdriver-logger
+[downloads-badge]: https://img.shields.io/npm/dm/express-stackdriver-logger.svg?style=flat-square
+[npm-stat]: http://npm-stat.com/charts.html?package=express-stackdriver-pino&from=2016-04-01
+[license-badge]: https://img.shields.io/npm/l/express-stackdriver-pino.svg?style=flat-square
+[license]: https://github.com/obengwilliam/express-stackdriver-pino/blob/master/other/LICENSE
+[examples-badge]: https://img.shields.io/badge/%F0%9F%92%A1-examples-8C8E93.svg?style=flat-square
+[examples]: https://github.com/obengwilliam/express-stackdriver-pino/blob/master/examples/EXAMPLES.md
+[github-watch-badge]: https://img.shields.io/github/watchers/obengwilliam/express-stackdriver-pino.svg?style=social
+[github-watch]: https://github.com/obengwilliam/express-stackdriver-pino/watchers
+[github-star-badge]: https://img.shields.io/github/stars/obengwilliam/express-stackdriver-pino
+[github-star]: https://github.com/obengwilliam/express-stackdriver-pino/stargazers
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20express-stackdriver-pino!%20https://github.com/obengwilliam/expresss-stackdriver-pino%20%F0%9F%91%8D
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/obengwilliam/express-stackdriver-pino.svg?style=social
