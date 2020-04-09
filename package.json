@@ -13,7 +13,7 @@
     "cover:report": "nyc --reporter=lcov --reporter=text-lcov npm test",
     "cover:report:open": "opn coverage/lcov-report/index.html",
     "postcover": "rimraf -rf .nyc_output",
-    "lint": "# Run lint and fix \n\t eslint lint",
+    "lint": "# Run lint and fix \n\t eslint *.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "commit": "git-cz",
     "release": "np"
@@ -25,7 +25,24 @@
     "uuid": "3.3.2",
     "pino": "5.11.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "4.2.0",
+    "dirty-chai": "2.0.1",
+    "eslint": "6.8.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-mocha": "6.3.0",
+    "eslint-plugin-no-loops": "0.3.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-security": "1.4.0",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-this": "0.2.3",
+    "express": "4.17.1",
+    "mocha": "7.1.1",
+    "split2": "3.1.1",
+    "supertest": "4.0.2"
+  },
   "standard": {
     "env": [
       "mocha"

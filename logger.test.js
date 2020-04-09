@@ -53,7 +53,7 @@ describe('Logger', () => {
   })
 
   describe('Disable logs', () => {
-    let dest = split(JSON.parse)
+    const dest = split(JSON.parse)
     let server, jsonlog
 
     before(() => {
@@ -189,7 +189,7 @@ describe('Logger', () => {
   })
   describe('Error logger middleware', () => {
     let server
-    let jsonlogs = []
+    const jsonlogs = []
 
     before(() => {
       const dest = split(JSON.parse)
