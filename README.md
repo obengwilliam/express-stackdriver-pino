@@ -1,6 +1,18 @@
 # Overview
 - Provides a number of express log utilities that are formatted to work on stackdriver using fastest the logger in nodejs :) [pino](https://github.com/pinojs/pino)
 
+[![Build Status][build-badge]][build]
+[![Code Coverage][coverage-badge]][coverage]
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npm-stat]
+[![MIT License][license-badge]][license]
+
+[![Examples][examples-badge]][examples]
+
+[![Watch on GitHub][github-watch-badge]][github-watch]
+[![Star on GitHub][github-star-badge]][github-star]
+[![Tweet][twitter-badge]][twitter]
+
 
 ### Checklist 
 -  [ ] Add correlation ids to global log or parent log
